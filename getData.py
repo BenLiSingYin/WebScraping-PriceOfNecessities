@@ -15,7 +15,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 def scrapData():
-    goods_list = pd.read_csv('/Users/user/Desktop/2020WebPrice_daily/material/goods_list.csv', engine='python', sep=',', header=0, names=['Brand', 'Goods Name', 'URL', 'UpdateDate'])
+    goods_list = pd.read_csv('material/goods_list.csv', engine='python', sep=',', header=0, names=['Brand', 'Goods Name', 'URL', 'UpdateDate'])
 
     driver = uc.Chrome()
     
